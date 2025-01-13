@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: collections01-coll-14914a62fb0a47198ab813e564ae3844-srv
+spec:
+  selector:
+    app: collections01-coll-14914a62fb0a47198ab813e564ae3844
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
